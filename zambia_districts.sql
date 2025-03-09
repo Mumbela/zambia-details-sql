@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 09, 2025 at 06:02 PM
+-- Generation Time: Mar 09, 2025 at 06:15 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.1.12
 
@@ -26,8 +26,8 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `zambia_districts` (
   `id` int(11) NOT NULL,
-  `district` varchar(50) DEFAULT NULL,
-  `province_id` int(11) DEFAULT NULL
+  `district` varchar(50) NOT NULL,
+  `province_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -172,7 +172,7 @@ ALTER TABLE `zambia_districts`
 -- AUTO_INCREMENT for table `zambia_districts`
 --
 ALTER TABLE `zambia_districts`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=116;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=117;
 
 --
 -- Constraints for dumped tables
